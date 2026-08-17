@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0126e89b84a4b3147a61747951f8ba2f, type: 3}
+  m_Name: CityLayout
+  m_EditorClassIdentifier: 
+  entries:
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 27, y: 9}
+    rotation: 3
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 21, y: 8}
+    rotation: 3
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 18, y: 13}
+    rotation: 3
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 30, y: 17}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 17, y: 6}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 37, y: 8}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 33, y: 11}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 37, y: 16}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 39, y: 23}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 28, y: 3}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 32, y: 5}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 25, y: 13}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 11, y: 24}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 13, y: 35}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 24, y: 38}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 42, y: 14}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 20, y: 19}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 37, y: 34}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 16, y: 25}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 22, y: 2}
+    rotation: 1
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 24, y: 21}
+    rotation: 3
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 9, y: 39}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 18, y: 44}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 4, y: 27}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 7, y: 14}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 12, y: 12}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 78ab6908e6a6d2d4caee69d641a93cda, type: 2}
+    anchor: {x: 34, y: 41}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 392472c774f9ac84c880a070e1925b50, type: 2}
+    anchor: {x: 21, y: 26}
+    rotation: 2
+  - placeable: {fileID: 11400000, guid: 294cdd825f053504d9e10e4b7baf34b0, type: 2}
+    anchor: {x: 27, y: 30}
+    rotation: 2

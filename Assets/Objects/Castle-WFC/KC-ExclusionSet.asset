@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a7da40b05c30448b2760175af1f74e, type: 3}
+  m_Name: KC-ExclusionSet
+  m_EditorClassIdentifier: 
+  moduleSet: {fileID: 11400000, guid: 1a879b1cd0c0c5e46a7e5945448c2014, type: 2}
+  rules:
+  - kind: 0
+    moduleA: {fileID: 11400000, guid: 13d28a3f8e4d97e4fa2ca37a83b54374, type: 2}
+    moduleB: {fileID: 11400000, guid: 13d28a3f8e4d97e4fa2ca37a83b54374, type: 2}
+    direction: 0
+    socketA:
+      library: {fileID: 0}
+      socketId: 0
+      flipped: 0
+      rotationIndex: 0
+    socketB:
+      library: {fileID: 0}
+      socketId: 0
+      flipped: 0
+      rotationIndex: 0
+    reason: 

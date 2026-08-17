@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9672db840caafb4a80a4c79375f813e, type: 3}
+  m_Name: KC-SocketLibrary
+  m_EditorClassIdentifier: 
+  entries:
+  - id: 10
+    displayName: muro-h
+    color: {r: 1, g: 0, b: 0, a: 1}
+    kind: 0
+    notes: 
+  - id: 11
+    displayName: vacio-h
+    color: {r: 0.8361715, g: 0.8962264, b: 0.51152545, a: 1}
+    kind: 0
+    notes: 
+  - id: 12
+    displayName: vacio-v
+    color: {r: 0.9716981, g: 0.5454343, b: 0.9037094, a: 1}
+    kind: 2
+    notes: 
+  - id: 14
+    displayName: torre-v
+    color: {r: 0.682164, g: 0.9433962, b: 0.6452474, a: 1}
+    kind: 2
+    notes: 
+  - id: 13
+    displayName: suelo-v
+    color: {r: 0.042290688, g: 0, b: 1, a: 1}
+    kind: 2
+    notes: 
+  nextId: 15
