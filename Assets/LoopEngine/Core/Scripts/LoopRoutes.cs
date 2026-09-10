@@ -7,11 +7,11 @@ public static class LoopRoutes
 
     private const string ToolRoute = "Tools/LoopEngine";
     private const string EditorToolRoute = ToolRoute + "/EditorTools";
-
-    public const string ColorToolRoute = EditorToolRoute + "/Color";
-    public const string WFCToolRoute = EditorToolRoute + "/WFC";
-    public const string BuilderToolRoute = EditorToolRoute + "/Builder";
-    public const string LoogingToolRoute = EditorToolRoute + "/Logging";
+    public const string ColorToolRoute = EditorToolRoute + "/ColorEngine";
+    public const string BuilderToolRoute = EditorToolRoute + "/BuilderEngine";
+    public const string LoogingToolRoute = EditorToolRoute + "/LoggingEngine";
+    public const string CraftingToolRoute = EditorToolRoute + "/CraftingEngine";
+    public const string InputToolRoute = EditorToolRoute + "/Input";
 
     //Rutas Scriptable
 
@@ -23,6 +23,7 @@ public static class LoopRoutes
     public const string TerrainRoute = FilesRoute + "/Terrain";
     public const string MovementRoute = FilesRoute + "/Movement";
     public const string LoogerRoute = FilesRoute + "/Logger";
+    public const string CraftRoute = FilesRoute + "/Crafting";
 
 
 }

@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d602371afcfcf46aeb4809cfd9b5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: 1
+  source: 0
   settings: {fileID: 11400000, guid: 3920eb24408e83b468b141b229741cec, type: 2}
   inlineLayout:
     origin: {x: 0, y: 0, z: 0}
@@ -312,10 +312,37 @@ MonoBehaviour:
   inlineBoundsMin:
     x: 0
     y: 0
-  inlineWidth: 16
-  inlineHeight: 16
+  inlineWidth: 10
+  inlineHeight: 10
   inlineBaseCellType: 1
-  inlineSubGrids: []
+  inlineSubGrids:
+  - label: 
+    enabled: 1
+    origin:
+      x: 2
+      y: 2
+    width: 3
+    height: 1
+    cellType: 2
+    borderOnly: 0
+  - label: 
+    enabled: 1
+    origin:
+      x: 2
+      y: 5
+    width: 7
+    height: 2
+    cellType: 2
+    borderOnly: 0
+  - label: 
+    enabled: 1
+    origin:
+      x: 1
+      y: 7
+    width: 4
+    height: 2
+    cellType: 2
+    borderOnly: 0
   inlineWeights:
     defaultWeight: 1
     defaultPassable: 1
@@ -323,27 +350,27 @@ MonoBehaviour:
     - type: 0
       weight: 0
       passable: 0
-      color: {r: 0, g: 0, b: 0, a: 0.5}
+      color: {r: 1, g: 1, b: 1, a: 0.8}
     - type: 1
       weight: 1
       passable: 1
-      color: {r: 0.35, g: 0.7, b: 0.4, a: 0.55}
+      color: {r: 0.32258296, g: 1, b: 0.11792451, a: 0.62352943}
     - type: 2
       weight: 0
       passable: 0
-      color: {r: 0.75, g: 0.25, b: 0.25, a: 0.65}
+      color: {r: 0.9622642, g: 0.23148806, b: 0.23148806, a: 0.83137256}
     - type: 3
       weight: 2
       passable: 1
-      color: {r: 0.25, g: 0.5, b: 0.85, a: 0.55}
+      color: {r: 0.46226418, g: 0.22630948, b: 0, a: 0.6509804}
     - type: 4
       weight: 1
       passable: 1
-      color: {r: 0.95, g: 0.8, b: 0.2, a: 0.6}
+      color: {r: 1, g: 0.45098042, b: 0.9816504, a: 0.7372549}
     - type: 5
       weight: 1
       passable: 1
-      color: {r: 0.85, g: 0.4, b: 0.85, a: 0.6}
+      color: {r: 0, g: 0.006896496, b: 1, a: 0.70980394}
   gridRenderer: {fileID: 482330663}
 --- !u!4 &482330665
 Transform:
@@ -452,6 +479,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &900758049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900758051}
+  - component: {fileID: 900758050}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &900758050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900758049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca778a43ded8a84eadf63137cc9dbda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 482330664}
+  sub_renderer: {fileID: 482330662}
+  previewInEditor: 1
+  previewFill: 0.92
+  previewRegionOutlines: 1
+--- !u!4 &900758051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900758049}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1354968306
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,8 +564,8 @@ MonoBehaviour:
     y: 0
   spawnOnStart: 1
   destinationCoord:
-    x: 8
-    y: 5
+    x: 10
+    y: 10
   moveOnStart: 0
 --- !u!4 &1354968308
 Transform:
@@ -567,3 +643,4 @@ SceneRoots:
   - {fileID: 482330665}
   - {fileID: 1670440777}
   - {fileID: 1354968308}
+  - {fileID: 900758051}

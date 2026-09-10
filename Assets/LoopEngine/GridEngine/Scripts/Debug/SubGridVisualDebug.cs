@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-namespace LoopEngine.GridEngine.Tests
+namespace LoopEngine.GridEngine.VisualDebug
 {
     /// <summary>
     /// Visual test for cell types and sub-grids.
@@ -16,8 +16,8 @@ namespace LoopEngine.GridEngine.Tests
     /// Scene view without Play: the Gizmo preview draws the sub-grids straight from the
     /// configuration. Game view in Play: GridRenderer draws the stamped map.
     /// </summary>
-    [AddComponentMenu("IsoGrid/Tests/Sub Grid Visual Test")]
-    public class SubGridVisualTest : MonoBehaviour
+    [AddComponentMenu(LoopRoutes.GridRoute + "/Sub Grid Visual Debug")]
+    public class SubGridVisualDebug : MonoBehaviour
     {
         [SerializeField] private GridSystem grid;
         [SerializeField] private SubGridRenderer sub_renderer;

@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace LoopEngine.GridMovement.Samples
 {
@@ -23,6 +25,8 @@ namespace LoopEngine.GridMovement.Samples
         [SerializeField] private GridCoord destinationCoord = new GridCoord(8, 5);
         [SerializeField] private bool moveOnStart = false;
 
+        public event Action<GameObject> OnSpawnAgent;
+
         private GridMover agent;
 
         private void Start()
@@ -43,6 +47,8 @@ namespace LoopEngine.GridMovement.Samples
         {
             agent = movement.Spawn(agentPrefab, spawnCoord, transform);
             if (agent == null) return;
+
+            OnSpawnAgent?.Invoke(agent.gameObject);
 
             agent.PathCompleted += coord => Debug.Log($"Arrived at {coord}.");
             agent.PathBlocked += coord => Debug.Log($"Blocked by {coord}.");
@@ -68,7 +74,7 @@ namespace LoopEngine.GridMovement.Samples
         {
             if (movement == null) return;
             if (agent == null) return;
-            if (!moveOnStart && Input.GetKeyDown(KeyCode.Z))
+            if (!moveOnStart && Keyboard.current.zKey.wasPressedThisFrame)
             {
                 MoveAgent();
             }

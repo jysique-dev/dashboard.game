@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace LoopEngine.AssetTool
+namespace LoopEngine.Tools.Windows
 {
     public sealed class AssetColumn<T>
     {

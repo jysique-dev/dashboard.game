@@ -1,0 +1,107 @@
+{
+    "version": 1,
+    "items": [
+        {
+            "id": "item.iron_ore",
+            "displayName": "Iron Ore",
+            "description": "Raw ore, mined from surface deposits.",
+            "maxStack": 100,
+            "tags": [
+                "ore",
+                "metal"
+            ]
+        },
+        {
+            "id": "item.coal",
+            "displayName": "Coal",
+            "description": "Burns hot enough to smelt iron.",
+            "maxStack": 100,
+            "tags": [
+                "fuel"
+            ]
+        },
+        {
+            "id": "item.iron_ingot",
+            "displayName": "Iron Ingot",
+            "description": "",
+            "maxStack": 50,
+            "tags": [
+                "metal",
+                "refined"
+            ]
+        },
+        {
+            "id": "item.speed_module",
+            "displayName": "Speed Module",
+            "description": "",
+            "maxStack": 10,
+            "tags": [
+                "upgrade"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "category.furnace",
+            "displayName": "Furnace",
+            "description": "Anything that applies heat to raw materials."
+        }
+    ],
+    "recipes": [
+        {
+            "id": "recipe.iron_ingot",
+            "displayName": "Iron Ingot",
+            "inputs": [
+                {
+                    "item": "item.iron_ore",
+                    "amount": 2
+                },
+                {
+                    "item": "item.coal",
+                    "amount": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "item": "item.iron_ingot",
+                    "amount": 1
+                }
+            ],
+            "craftSeconds": 2.0,
+            "requiredCategory": "category.furnace"
+        }
+    ],
+    "machines": [
+        {
+            "id": "machine.furnace",
+            "displayName": "Stone Furnace",
+            "categories": [
+                "category.furnace"
+            ],
+            "parallelSlots": 1,
+            "queueCapacity": 4,
+            "speedMultiplier": 1.0,
+            "modifierSlots": 2,
+            "allowHandCraftedRecipes": false
+        }
+    ],
+    "modifiers": [
+        {
+            "id": "modifier.speed_1",
+            "displayName": "Speed Module I",
+            "carrierItem": "item.speed_module",
+            "entries": [
+                {
+                    "stat": "speed",
+                    "operation": "additive",
+                    "value": 0.25
+                }
+            ],
+            "bonusOutputs": [],
+            "allowedCategories": [
+                "category.furnace"
+            ],
+            "maxPerMachine": 2
+        }
+    ]
+}

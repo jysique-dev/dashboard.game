@@ -165,6 +165,44 @@ namespace LoopEngine.GridEngine
         public GridSettings Settings => settings;
 
         /// <summary>
+        /// Copies the asset's values into the inline fields, so a saved configuration can
+        /// be tweaked and looked at before saving again. Does nothing and returns false
+        /// when no asset is assigned. Overwrites the inline values without asking.
+        /// </summary>
+        public bool LoadFromSettings()
+        {
+            if (settings == null) return false;
+
+            inlineLayout = new PlanarGridLayout(
+                settings.Origin, settings.CellSize, settings.YawDegrees, settings.Plane);
+            inlineLayout.Rebuild();
+
+            GridBounds assetBounds = settings.CreateBounds();
+            inlineBoundsMin = assetBounds.Min;
+            inlineWidth = Mathf.Max(1, assetBounds.Width);
+            inlineHeight = Mathf.Max(1, assetBounds.Height);
+
+            inlineBaseCellType = settings.BaseCellType;
+
+            // Cloned so editing the inline copy never writes back into the asset.
+            if (inlineSubGrids == null) inlineSubGrids = new List<SubGrid>();
+            inlineSubGrids.Clear();
+
+            IReadOnlyList<SubGrid> assetSubGrids = settings.SubGrids;
+            if (assetSubGrids != null)
+            {
+                for (int i = 0; i < assetSubGrids.Count; i++)
+                    if (assetSubGrids[i] != null)
+                        inlineSubGrids.Add(assetSubGrids[i].Clone());
+            }
+
+            inlineWeights = settings.Weights != null ? settings.Weights.Clone() : new CellWeightTable();
+
+            ApplySettings();
+            return true;
+        }
+
+        /// <summary>
         /// Writes the inline values into the referenced asset. Does nothing and returns
         /// false when no asset is assigned. The inline values are always the source, so
         /// what you tuned and looked at in the scene is exactly what gets persisted.
@@ -224,8 +262,6 @@ namespace LoopEngine.GridEngine
                 return activeWeights;
             }
         }
-
-
         public bool TryGetPaletteColor(CellType type, out Color color)
         {
             return Weights.TryGetPaletteColor(type, out color);

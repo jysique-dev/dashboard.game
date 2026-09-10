@@ -12,17 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e53ccb5c7875f4ab7517032aa0cf13, type: 3}
   m_Name: IsoGridSettings
   m_EditorClassIdentifier: 
-  origin: {x: 0, y: 0, z: 0}
+  origin: {x: 0, y: -10, z: 0}
   cellSize: {x: 1, y: 1}
   yawDegrees: 0
   plane: 0
   boundsMin:
     x: 0
     y: 0
-  width: 16
-  height: 16
+  width: 25
+  height: 25
   baseCellType: 1
-  subGrids: []
+  subGrids:
+  - label: 
+    enabled: 1
+    origin:
+      x: 2
+      y: 2
+    width: 3
+    height: 1
+    cellType: 2
+    borderOnly: 0
+  - label: 
+    enabled: 1
+    origin:
+      x: 2
+      y: 5
+    width: 7
+    height: 2
+    cellType: 2
+    borderOnly: 0
+  - label: 
+    enabled: 1
+    origin:
+      x: 1
+      y: 7
+    width: 4
+    height: 2
+    cellType: 2
+    borderOnly: 0
   weights:
     defaultWeight: 1
     defaultPassable: 1
@@ -30,24 +57,24 @@ MonoBehaviour:
     - type: 0
       weight: 0
       passable: 0
-      color: {r: 0, g: 0, b: 0, a: 0.5}
+      color: {r: 1, g: 1, b: 1, a: 0.8}
     - type: 1
       weight: 1
       passable: 1
-      color: {r: 0.35, g: 0.7, b: 0.4, a: 0.55}
+      color: {r: 0.32258296, g: 1, b: 0.11792451, a: 0.62352943}
     - type: 2
       weight: 0
       passable: 0
-      color: {r: 0.75, g: 0.25, b: 0.25, a: 0.65}
+      color: {r: 0.9622642, g: 0.23148806, b: 0.23148806, a: 0.83137256}
     - type: 3
       weight: 2
       passable: 1
-      color: {r: 0.25, g: 0.5, b: 0.85, a: 0.55}
+      color: {r: 0.46226418, g: 0.22630948, b: 0, a: 0.6509804}
     - type: 4
       weight: 1
       passable: 1
-      color: {r: 0.95, g: 0.8, b: 0.2, a: 0.6}
+      color: {r: 1, g: 0.45098042, b: 0.9816504, a: 0.7372549}
     - type: 5
       weight: 1
       passable: 1
-      color: {r: 0.85, g: 0.4, b: 0.85, a: 0.6}
+      color: {r: 0, g: 0.006896496, b: 1, a: 0.70980394}

@@ -207,5 +207,10 @@ namespace LoopEngine.IsoCamera.Core
         {
             if (b != null) b.enabled = active;
         }
+
+        public void SetInitialTarget(GameObject target)
+        {
+            follow.Target = CameraTargetResolver.Resolve(target);
+        }
     }
 }

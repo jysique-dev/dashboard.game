@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70af8aa4115fb54e90058ed1f106dde, type: 3}
+  m_Name: recipe.iron_ingot
+  m_EditorClassIdentifier: 
+  _id: recipe.iron_ingot
+  _displayName: Iron Ingot
+  _inputs:
+  - _item: {fileID: 11400000, guid: 480548afc0ca2d44081d2ca60092fb8a, type: 2}
+    _amount: 2
+  - _item: {fileID: 11400000, guid: 1ccfb50f63fbc704b837f6ed0c292329, type: 2}
+    _amount: 1
+  _outputs:
+  - _item: {fileID: 11400000, guid: ffeb17ad020bc8c45b296026db8a1fc4, type: 2}
+    _amount: 1
+  _craftSeconds: 2
+  _requiredCategory: {fileID: 11400000, guid: bb564642b0182db46a710845742c2723, type: 2}

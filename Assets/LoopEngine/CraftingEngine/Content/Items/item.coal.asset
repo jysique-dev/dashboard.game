@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337035437cc9d2b41afab171eaca9416, type: 3}
+  m_Name: item.coal
+  m_EditorClassIdentifier: 
+  _id: item.coal
+  _displayName: Coal
+  _description: Burns hot enough to smelt iron.
+  _icon: {fileID: -1954976319, guid: 5bd50c19a214e3141830f02cdec3d4d9, type: 3}
+  _maxStack: 100
+  _tags:
+  - fuel

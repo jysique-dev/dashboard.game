@@ -51,7 +51,7 @@ MonoBehaviour:
     startZoom: 0.3
     zoomToCursor: 0
   rotation:
-    enabled: 0
+    enabled: 1
     stepsPerTurn: 4
     duration: 0.2
     ease:
